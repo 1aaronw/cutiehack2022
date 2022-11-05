@@ -58,3 +58,59 @@ button:hover{
     display: flex;
     justify-content: center;
 }
+
+
+
+.container {
+	width: 200px;
+	height: 100px;
+	padding-top: 100px;
+	margin: 0 auto;
+}
+
+.cutie {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: auto;
+  top: 50%;
+  left: 50%;
+}
+.cutie_stem{
+	width: 0px;
+	height: 0px;
+	border-radius: 0 50% 0 50%; /*leaf shape*/
+	margin: auto;
+	border: 11px solid #5c9721;
+	transform: rotate(180deg);
+	border-left-color: #7ac654;
+	border-bottom-color: #7ac654;
+    top: 50%;
+    left: 50%;
+
+  }
+/* set 1*/
+.cutie:nth-child(1) {
+	background-color: #e05f0f;
+ 	box-shadow: inset 8px 8px  #ec8240;
+ 	position: absolute;
+  	top:290px; /*positioning*/
+	animation: right 2s infinite ease-in-out;
+}
+.cutie_stem:nth-child(2) {
+	position: absolute;
+	top: 276px; /* positioning*/
+	animation: right 2s infinite ease-in-out;
+}
+
+@keyframes right {
+	0% {transform: translate(-100px);}
+	50% {transform: translate(100px);}
+	100% {transform: translate(-100px);}
+}
+
+@keyframes left {
+	0%{transform: translate(-20px);}
+	50%{transform:translate(20px);}
+	100%{transform:translate(-20px);}
+}
