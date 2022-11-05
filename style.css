@@ -1,9 +1,26 @@
+body {
+    font-family: 'Andale Mono', monospace;
+	background-image: url('https://c.tenor.com/fputHj4ejZ0AAAAC/stars-space.gif');
+    color: #F9FAF8;
+    padding: 0;
+    margin: 0;
+}
+
 .header{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    color: orange;
-    font-size: 48px;
+    color: #e05f0f;
+	text-shadow:
+    0 0 7px rgb(240, 119, 32),
+    0 0 10px rgb(240, 119, 32),
+    0 0 21px rgb(240, 119, 32),
+    0 0 45px rgb(240, 119, 32),
+    0 0 90px rgb(240, 119, 32),
+    0 0 101px rgb(240, 119, 32),
+    0 0 150px rgb(255, 255, 255),
+    0 0 200px rgb(255, 255, 255);
+    font-size: 72px;
     margin-bottom: 40px;
     margin-top: 10px;
     font-weight: bold;
@@ -12,34 +29,51 @@
 }
 
 
+ 
 
-body {
-    font-family: Roboto, sans-serif;
-    background-color: #CD7F32;
-    color: #F9FAF8;
-    padding: 0;
-    margin: 0;
-}
-
-a { 
+/* a { 
     text-decoration: none;
     color: white;
  }
 
  a:hover{
-    color: black;
- }
+    color: rgb(0, 0, 0);
+
+ } */
 
 button {
-    background-color: #F08000;
+    background-color: #e05f0f;
+	font-family: 'Andale Mono', monospace;
+	font-size:36px;
+	box-shadow: inset 50px 50px  #ec8240;
     border-radius: 50%;
     height: 300px;
-    border-color: black;
+    margin-right: 15px;
+	margin-left:15px;
+	margin-top:15px;
+	margin-bottom:15px;
     color: white;
+	transition: transform .7s ease-in-out;
+	
 }
 button:hover{
-    color:black;
-    background-image: linear-gradient(to right, #FFA500 0%, #EC5800 51%, #F08000 100%);
+	box-shadow: none;
+	color:rgb(255, 255, 255);
+	transform: rotate(360deg);
+	text-shadow:
+    0 0 7px rgb(240, 119, 32),
+    0 0 10px rgb(240, 119, 32),
+    0 0 21px rgb(240, 119, 32),
+    0 0 45px rgb(240, 119, 32),
+    0 0 90px rgb(240, 119, 32),
+    0 0 101px rgb(240, 119, 32),
+    0 0 150px rgb(255, 255, 255),
+    0 0 200px rgb(255, 255, 255);
+	background-color:#e84f07;
+   background-image: url("http://www.clker.com/cliparts/b/6/U/f/U/n/orange-slice-hi.png");
+   background-size:cover;
+	
+
 }
 .btn-group{
     display: flex;
@@ -89,19 +123,25 @@ button:hover{
     left: 50%;
 
   }
+
+
 /* set 1*/
 .cutie:nth-child(1) {
 	background-color: #e05f0f;
  	box-shadow: inset 8px 8px  #ec8240;
  	position: absolute;
-  	top:290px; /*positioning*/
+  	top:330px; /*positioning*/
 	animation: right 2s infinite ease-in-out;
 }
 .cutie_stem:nth-child(2) {
 	position: absolute;
-	top: 276px; /* positioning*/
+	top: 316px; /* positioning*/
 	animation: right 2s infinite ease-in-out;
 }
+/*end set 1*/
+
+
+
 
 @keyframes right {
 	0% {transform: translate(-100px);}
