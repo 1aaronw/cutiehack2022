@@ -4,12 +4,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ideal Oranges Calculator</title>
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-    <a href="./small.html">Small</a>
-    <a href="./medium.html">Medium</a>
-    <a href="./large.html">Large</a>
+  <h1>The month that it's going to ripen is </h1>
+  <p id="main"></p>
+  <script>
+    function getMonth(){
+      let monthInt = 1;
+      let random = Math.floor(Math.random()*(12-9)+8);
+      let ripedOrange = monthInt + random;
+      let month = "June";
+      while(ripedOrange > 12){
+        random = Math.floor(Math.random()*(13-7)+8);
+        ripedOrange = monthInt + random;
+        ripedOrange -= 12;
+      }
+      if(ripedOrange == 0 || ripedOrange == 6){ //same month
+        month = "June";
+      }
+      else if(ripedOrange == 2){
+        month = "Feburary";
+      }
+      else if(ripedOrange == 3){
+        month = "March";
+      }
+      else if(ripedOrange == 4){
+        month = "April";
+      }
+      else if(ripedOrange == 5){
+        month = "May";
+      }
+      else if(ripedOrange == 1){
+        month = "January";
+      }
+      else if(ripedOrange == 7){
+        month = "July";
+      }
+      else if(ripedOrange == 8){
+        month = "August";
+      }
+      else if(ripedOrange == 9){
+        month = "September";
+      }
+      else if(ripedOrange == 10){
+        month = "October";
+      }
+      else if(ripedOrange == 11){
+        month = "November";
+      }
+      else if(ripedOrange == 12){
+        month = "December";
+      }
+
+      return month;
+    }
+  getMonth();
+  </script>>
+  <script>
+  document.write(getMonth());
+  </script>
+  
 </body>
 </html>
