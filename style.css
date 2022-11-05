@@ -18,3 +18,32 @@ body {
     padding: 0;
     margin: 0;
 }
+
+button {
+    background-color: #F08000;
+    border-radius: 50%;
+    height: 300px;
+    border-color: black;
+    color: white;
+}
+button:hover{
+    color:black;
+    background-image: linear-gradient(to right, #FFA500 0%, #EC5800 51%, #F08000 100%);
+}
+.btn-group{
+    display: flex;
+    justify-content: center;
+    color: #1F2937;
+}
+.btn-group2{
+    display: flex;
+    justify-content: center;
+}
+.btn-group3{
+    display: flex;
+    justify-content: center;
+}
+.btn-group4{
+    display: flex;
+    justify-content: center;
+}
