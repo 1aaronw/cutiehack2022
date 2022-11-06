@@ -21,41 +21,66 @@
         ripedOrange = monthInt + random;
         ripedOrange -= 12;
       }
-      if(ripedOrange == 0 || ripedOrange == 5){ //same month
-        month = "May";
+      if(((ripedOrange == 0) || (ripedOrange == 5))){ //same month
+        month = "January (Ideal For Yosemite Gold)";
+        x.src = "../images/yosemitegold.png";
+        x_home.appendChild(x);
+
       }
       else if(ripedOrange == 2){
-        month = "February";
+        month = "February (Ideal For Temple Oranges)";
+        x.src="../images/temple.png";
+        x_home.appendChild(x);
       }
       else if(ripedOrange == 3){
-        month = "March";
+        month = "March (Ideal For Bergamot)";
+        x.src="../images/bergamot.png";
+        x_home.appendChild(x);
       }
       else if(ripedOrange == 4){
-        month = "April";
+        month = "April (Ideal For Blood Orange)";
+        x.src="../images/bloodorange.png";
+        x_home.appendChild(x);
       }
-      else if(ripedOrange == 1){
-        month = "January";
+      else if(ripedOrange == 5){
+        month = "May (Ideal For Clementine)";
+        x.src="../images/clementine.png";
+        x_home.appendChild(x);
       }
       else if(ripedOrange == 6){
-        month = "June";
+        month = "June (Ideal For Seville Oranges";
+        x.src="../images/seville.png";
+        x_home.appendChild(x);
       }
       else if(ripedOrange == 7){
-        month = "July";
+        month = "July (Ideal For Ojai Pixie)";
+        x.src="../images/ojaipixie.png";
+        x_home.appendChild(x);
       }
       else if(ripedOrange == 8){
-        month = "August";
+        month = "August (Ideal For Minneola Tangelo)";
+        x.src="../images/minneolatangelo.png";
+        x_home.appendChild(x);
       }
       else if(ripedOrange == 9){
-        month = "September";
+        month = "September (Ideal For Valencia Oranges)";
+        x.src="../images/valencia.png";
+        x_home.appendChild(x);
       }
       else if(ripedOrange == 10){
-        month = "October";
+        month = "October (Ideal For Cherry Orange)";
+        x.src="../images/cherryorange.png";
+        x_home.appendChild(x);
       }
       else if(ripedOrange == 11){
-        month = "November";
+        month = "November (Ideal For Cara Cara)";
+        x.src="../images/caracara.png";
+        x_home.appendChild(x);
       }
       else if(ripedOrange == 12){
-        month = "December";
+        month = "December Ideal For (Navel Orange)";
+        x.src="../images/navel.png";
+        x_home.appendChild(x);
       }
 
       return month;
